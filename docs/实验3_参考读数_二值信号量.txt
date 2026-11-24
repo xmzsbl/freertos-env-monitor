@@ -1,0 +1,114 @@
+[MAIN  ] W3_ISOLATE=1 实验模式:只跑 Stats + 反转三角
+[MAIN  ] xInvSem 上电初始化完成:计数=1(1=锁可用)
+[MAIN  ] starting FreeRTOS scheduler, 10 tasks: Sensor/Alarm/Comm/Display/KeySim/Stats/IsrSim/Wake/EvtSrc/EvtCons
+[LOWHOLD] t=202 ms 准备拿锁
+[LOWHOLD] >>> 已拿到锁 t=202 ms\n[HIGHWAIT] t=602 ms 开始等锁
+[MIDHOG ] t=1202 ms 开始占 CPU 3000 ms(全程不碰锁)
+[STATS ] ---- 任务状态表(status/优先级/栈剩余) ----
+Stats      	X	4	1021	4
+MidHog     	R	2	1021	2
+LowHold    	R	1	1021	1
+IDLE       	R	0	67	5
+Tmr Svc    	B	6	137	6
+HighWait   	B	3	1021	3
+[STATS ] ---- CPU 占用(%) ----
+Stats      	21		<1%
+MidHog     	81477		39%
+LowHold    	31		<1%
+IDLE       	123719		60%
+Tmr Svc    	36		<1%
+HighWait   	16		<1%
+[STATS ] 栈高水位: LowHold=1021 MidHog=1021 HighWait=1021 Stats=1021
+[STATS ] ---- 任务状态表(status/优先级/栈剩余) ----
+Stats      	X	4	1021	4
+MidHog     	R	2	1021	2
+LowHold    	R	1	1021	1
+IDLE       	R	0	67	5
+Tmr Svc    	B	6	137	6
+HighWait   	B	3	1021	3
+[STATS ] ---- CPU 占用(%) ----
+Stats      	441		<1%
+MidHog     	287847		69%
+LowHold    	31		<1%
+IDLE       	123719		30%
+Tmr Svc    	36		<1%
+HighWait   	16		<1%
+[STATS ] 栈高水位: LowHold=1021 MidHog=1021 HighWait=1021 Stats=1021
+[MIDHOG ] 占完 CPU:自旋 3156894677 次,让出
+[STATS ] ---- 任务状态表(status/优先级/栈剩余) ----
+Stats      	X	4	1021	4
+IDLE       	R	0	67	5
+LowHold    	B	1	1021	1
+MidHog     	B	2	1021	2
+Tmr Svc    	B	6	137	6
+HighWait   	B	3	1021	3
+[STATS ] ---- CPU 占用(%) ----
+Stats      	463		<1%
+IDLE       	308804		50%
+LowHold    	70		<1%
+MidHog     	308051		49%
+Tmr Svc    	36		<1%
+HighWait   	16		<1%
+[STATS ] 栈高水位: LowHold=1021 MidHog=1021 HighWait=1021 Stats=1021
+[LOWHOLD] 拿锁 t=202 ms -> 还锁 t=6202 ms,共持锁 6000 ms
+[HIGHWAIT] 拿到锁 t=6202 ms,一共等了 5600 ms  <<< 实验读数
+[STATS ] ---- 任务状态表(status/优先级/栈剩余) ----
+Stats      	X	4	1021	4
+IDLE       	R	0	67	5
+MidHog     	B	2	1021	2
+LowHold    	B	1	1021	1
+HighWait   	B	3	1021	3
+Tmr Svc    	B	6	137	6
+[STATS ] ---- CPU 占用(%) ----
+Stats      	486		<1%
+IDLE       	515136		62%
+MidHog     	308054		37%
+LowHold    	80		<1%
+HighWait   	24		<1%
+Tmr Svc    	36		<1%
+[STATS ] 栈高水位: LowHold=1021 MidHog=1021 HighWait=1021 Stats=1021
+[STATS ] ---- 任务状态表(status/优先级/栈剩余) ----
+Stats      	X	4	1021	4
+IDLE       	R	0	67	5
+MidHog     	B	2	1021	2
+LowHold    	B	1	1021	1
+HighWait   	B	3	1021	3
+Tmr Svc    	B	6	137	6
+[STATS ] ---- CPU 占用(%) ----
+Stats      	509		<1%
+IDLE       	720728		70%
+MidHog     	308058		29%
+LowHold    	82		<1%
+HighWait   	28		<1%
+Tmr Svc    	36		<1%
+[STATS ] 栈高水位: LowHold=1021 MidHog=1021 HighWait=1021 Stats=1021
+[STATS ] ---- 任务状态表(status/优先级/栈剩余) ----
+Stats      	X	4	1021	4
+IDLE       	R	0	67	5
+MidHog     	B	2	1021	2
+LowHold    	B	1	1021	1
+HighWait   	B	3	1021	3
+Tmr Svc    	B	6	137	6
+[STATS ] ---- CPU 占用(%) ----
+Stats      	531		<1%
+IDLE       	924628		74%
+MidHog     	308063		24%
+LowHold    	84		<1%
+HighWait   	32		<1%
+Tmr Svc    	36		<1%
+[STATS ] 栈高水位: LowHold=1021 MidHog=1021 HighWait=1021 Stats=1021
+[STATS ] ---- 任务状态表(status/优先级/栈剩余) ----
+Stats      	X	4	1021	4
+IDLE       	R	0	67	5
+MidHog     	B	2	1021	2
+LowHold    	B	1	1021	1
+HighWait   	B	3	1021	3
+Tmr Svc    	B	6	137	6
+[STATS ] ---- CPU 占用(%) ----
+Stats      	553		<1%
+IDLE       	1132071		78%
+MidHog     	308067		21%
+LowHold    	86		<1%
+HighWait   	34		<1%
+Tmr Svc    	36		<1%
+[STATS ] 栈高水位: LowHold=1021 MidHog=1021 HighWait=1021 Stats=1021

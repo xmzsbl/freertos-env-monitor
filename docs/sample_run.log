@@ -1,0 +1,113 @@
+[MAIN  ] starting FreeRTOS scheduler, 6 tasks: Sensor/Alarm/Comm/Display/KeySim/Stats
+[KEY   ] 按键任务就绪:在本窗口按任意键 → 打印一行事件
+[SENSOR] seq=  1  T=27.65 C  H=69.49 %
+[OLED  ] T=27.65C  H=69.49%  alarm=0  pub=1
+[SENSOR] seq=  2  T=29.99 C  H=69.35 %
+[ALARM ] *** 温度超限! seq=2  T=29.99 C(阈值 29.0) ***
+[OLED  ] T=29.99C  H=69.35%  alarm=1  pub=2
+[SENSOR] seq=  3  T=32.13 C  H=69.74 %
+[ALARM ] *** 温度超限! seq=3  T=32.13 C(阈值 29.0) ***
+[OLED  ] T=32.13C  H=69.74%  alarm=2  pub=3
+[SENSOR] seq=  4  T=33.16 C  H=69.82 %
+[ALARM ] *** 温度超限! seq=4  T=33.16 C(阈值 29.0) ***
+[OLED  ] T=33.16C  H=69.82%  alarm=3  pub=4
+[SENSOR] seq=  5  T=32.99 C  H=69.23 %
+[COMM  ] publish seq=5 -> broker(累计 5 条)
+[ALARM ] *** 温度超限! seq=5  T=32.99 C(阈值 29.0) ***
+[OLED  ] T=32.99C  H=69.23%  alarm=4  pub=5
+[SENSOR] seq=  6  T=31.46 C  H=68.03 %
+[ALARM ] *** 温度超限! seq=6  T=31.46 C(阈值 29.0) ***
+[OLED  ] T=31.46C  H=68.03%  alarm=5  pub=6
+[SENSOR] seq=  7  T=30.41 C  H=66.52 %
+[ALARM ] *** 温度超限! seq=7  T=30.41 C(阈值 29.0) ***
+[OLED  ] T=30.41C  H=66.52%  alarm=6  pub=7
+[SENSOR] seq=  8  T=27.79 C  H=65.57 %
+[OLED  ] T=27.79C  H=65.57%  alarm=6  pub=8
+[SENSOR] seq=  9  T=25.38 C  H=63.27 %
+[OLED  ] T=25.38C  H=63.27%  alarm=6  pub=9
+[SENSOR] seq= 10  T=21.96 C  H=61.27 %
+[COMM  ] publish seq=10 -> broker(累计 10 条)
+[STATS ] ---- 任务状态表(status/优先级/栈剩余) ----
+Stats      	X	1	1021	6
+Display    	R	1	1021	4
+IDLE       	R	0	67	7
+KeySim     	B	1	1021	5
+Sensor     	B	3	1021	1
+Tmr Svc    	B	6	137	8
+Alarm      	B	2	1021	2
+Comm       	B	2	1021	3
+[STATS ] ---- CPU 占用(%) ----
+Stats      	19		<1%
+Display    	59		<1%
+IDLE       	1031910		99%
+KeySim     	5593		<1%
+Sensor     	461		<1%
+Tmr Svc    	42		<1%
+Alarm      	37		<1%
+Comm       	36		<1%
+[STATS ] 栈高水位(最小剩余,单位=栈深度单位): Sensor=1021 Alarm=1021 Comm=1021 Display=1021 Stats=1021 | 丢弃=0 断网缓存=0 按键=0
+[OLED  ] T=21.96C  H=61.27%  alarm=6  pub=10
+[SENSOR] seq= 11  T=20.20 C  H=58.96 %
+[OLED  ] T=20.20C  H=58.96%  alarm=6  pub=11
+[SENSOR] seq= 12  T=17.55 C  H=57.47 %
+[OLED  ] T=17.55C  H=57.47%  alarm=6  pub=12
+[SENSOR] seq= 13  T=17.53 C  H=55.89 %
+[OLED  ] T=17.53C  H=55.89%  alarm=6  pub=13
+[SENSOR] seq= 14  T=16.85 C  H=53.54 %
+[OLED  ] T=16.85C  H=53.54%  alarm=6  pub=14
+[SENSOR] seq= 15  T=17.81 C  H=52.88 %
+[COMM  ] publish seq=15 -> broker(累计 15 条)
+[OLED  ] T=17.81C  H=52.88%  alarm=6  pub=15
+[SENSOR] seq= 16  T=19.92 C  H=51.04 %
+[OLED  ] T=19.92C  H=51.04%  alarm=6  pub=16
+[SENSOR] seq= 17  T=22.59 C  H=50.36 %
+[OLED  ] T=22.59C  H=50.36%  alarm=6  pub=17
+[SENSOR] seq= 18  T=25.32 C  H=49.68 %
+[OLED  ] T=25.32C  H=49.68%  alarm=6  pub=18
+[SENSOR] seq= 19  T=28.04 C  H=50.53 %
+[OLED  ] T=28.04C  H=50.53%  alarm=6  pub=19
+[SENSOR] seq= 20  T=30.11 C  H=50.85 %
+[COMM  ] 网络异常,seq=20 转存本地 Flash 缓存(累计 1 条)
+[ALARM ] *** 温度超限! seq=20  T=30.11 C(阈值 29.0) ***
+[STATS ] ---- 任务状态表(status/优先级/栈剩余) ----
+Stats      	X	1	1021	6
+Display    	R	1	1021	4
+IDLE       	R	0	67	7
+KeySim     	B	1	1021	5
+Sensor     	B	3	1021	1
+Tmr Svc    	B	6	137	8
+Comm       	B	2	1021	3
+Alarm      	B	2	1021	2
+[STATS ] ---- CPU 占用(%) ----
+Stats      	52		<1%
+Display    	120		<1%
+IDLE       	2062233		99%
+KeySim     	10847		<1%
+Sensor     	543		<1%
+Tmr Svc    	42		<1%
+Comm       	69		<1%
+Alarm      	41		<1%
+[STATS ] 栈高水位(最小剩余,单位=栈深度单位): Sensor=1021 Alarm=1021 Comm=1021 Display=1021 Stats=1021 | 丢弃=0 断网缓存=1 按键=0
+[OLED  ] T=30.11C  H=50.85%  alarm=7  pub=19
+[SENSOR] seq= 21  T=31.54 C  H=50.78 %
+[ALARM ] *** 温度超限! seq=21  T=31.54 C(阈值 29.0) ***
+[OLED  ] T=31.54C  H=50.78%  alarm=8  pub=20
+[SENSOR] seq= 22  T=32.63 C  H=52.10 %
+[ALARM ] *** 温度超限! seq=22  T=32.63 C(阈值 29.0) ***
+[OLED  ] T=32.63C  H=52.10%  alarm=9  pub=21
+[SENSOR] seq= 23  T=33.08 C  H=53.83 %
+[ALARM ] *** 温度超限! seq=23  T=33.08 C(阈值 29.0) ***
+[OLED  ] T=33.08C  H=53.83%  alarm=10  pub=22
+[SENSOR] seq= 24  T=31.75 C  H=54.96 %
+[ALARM ] *** 温度超限! seq=24  T=31.75 C(阈值 29.0) ***
+[OLED  ] T=31.75C  H=54.96%  alarm=11  pub=23
+[SENSOR] seq= 25  T=30.03 C  H=57.39 %
+[COMM  ] publish seq=25 -> broker(累计 24 条)
+[ALARM ] *** 温度超限! seq=25  T=30.03 C(阈值 29.0) ***
+[OLED  ] T=30.03C  H=57.39%  alarm=12  pub=24
+[SENSOR] seq= 26  T=27.52 C  H=59.11 %
+[OLED  ] T=27.52C  H=59.11%  alarm=12  pub=25
+[SENSOR] seq= 27  T=24.92 C  H=61.24 %
+[OLED  ] T=24.92C  H=61.24%  alarm=12  pub=26
+[SENSOR] seq= 28  T=21.94 C  H=63.21 %
+[OLED  ] T=21.94C  H=63.21%  alarm=12  pub=27
