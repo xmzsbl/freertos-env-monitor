@@ -6,7 +6,8 @@ CC        := gcc
 CFLAGS    := -O0 -g3 -Wall -Wextra -D_WIN32_WINNT=0x0601 -DprojCOVERAGE_TEST=0
 LDFLAGS   := -lwinmm
 
-KERNEL_DIR := ../Source
+KERNEL_DIR := Source
+
 INCLUDES   := -I. -I$(KERNEL_DIR)/include -I$(KERNEL_DIR)/portable/MSVC-MingW
 
 APP_SRCS := main.c Run-time-stats-utils.c
